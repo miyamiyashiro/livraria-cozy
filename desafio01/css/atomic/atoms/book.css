@@ -1,0 +1,41 @@
+
+.book-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: var(--spacing-unit) 0 0.5rem;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0 0 0.5rem;
+}
+
+.book-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    background-color: #95a5a6;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+
+.badge--bestseller {
+    background-color: rgb(241, 22, 22);
+}

@@ -1,0 +1,21 @@
+.book-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    padding-bottom: var(--spacing-unit);
+    text-align: center;
+}
+
+.book-card .book-info {
+    padding: 0 1rem;
+}
+
+
+.book-card--featured {
+    border: 3px solid rgb(241, 22, 22);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}

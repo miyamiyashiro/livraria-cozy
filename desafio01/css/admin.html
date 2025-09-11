@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa - Cozy Livros</title>
+    
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./atomic/organisms/grid.css">
+    <link rel="stylesheet" href="./atomic/atoms/book.css">
+    <link rel="stylesheet" href="./atomic/molecules/card.css">
+
+        <script src="../js/admin.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        form input, form button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .book-admin-list {
+            margin-top: 2rem;
+        }
+        .book-admin-list h2 {
+            text-align: center;
+        }
+        .book-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Área Administrativa</h1>
+    </header>
+
+    <main>
+        <section id="form-container">
+            <h2>Gerenciar Livro</h2>
+            <form id="book-form">
+                <input type="hidden" id="book-id">
+                <input type="text" id="book-title" placeholder="Título do Livro" required>
+                <input type="text" id="book-author" placeholder="Autor" required>
+                <input type="number" id="book-price" placeholder="Preço" step="0.01" required>
+                <input type="url" id="book-image" placeholder="URL da Imagem da Capa" required>
+                <button type="submit">Salvar Livro</button>
+            </form>
+        </section>
+
+        <section class="book-admin-list">
+            <h2>Catálogo de Livros</h2>
+            <div id="books-list">
+                </div>
+        </section>
+    </main>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+:root {
+    --primary-color: grey;
+    --secondary-color: black;
+    --text-color: #333;
+    --light-gray: #f4f4f4ba;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --spacing-unit: 1rem;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 0;
+    padding: var(--spacing-unit);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+

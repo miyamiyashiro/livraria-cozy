@@ -1,0 +1,25 @@
+.catalog-grid {
+    display: grid;
+    gap: 2rem;
+    padding: var(--spacing-unit);
+}
+
+@media (min-width: 1024px) {
+    .catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 1023px) and (min-width: 500px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 499px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+}
