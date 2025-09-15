@@ -1,5 +1,5 @@
-// Remove o array 'const livros' que você tinha antes.
-// A função a seguir vai carregar os dados do localStorage
+
+
 function carregarLivros() {
     const livrosJSON = localStorage.getItem('livros');
     return livrosJSON ? JSON.parse(livrosJSON) : [];
@@ -8,19 +8,19 @@ function carregarLivros() {
 const catalogoContainer = document.querySelector('.catalog-grid');
 
 function renderizarLivros() {
-    // Agora, a função carrega os livros do localStorage
+    
     const livros = carregarLivros();
 
-    // Limpa o conteúdo atual da grade para evitar duplicações
+   
     catalogoContainer.innerHTML = '';
 
-    // Se não houver livros, exibe uma mensagem
+    
     if (livros.length === 0) {
         catalogoContainer.innerHTML = '<p style="text-align: center;">Nenhum livro cadastrado.</p>';
         return;
     }
 
-    // Itera sobre cada livro e cria o HTML do card
+   
     livros.forEach(livro => {
         const cardHTML = `
             <div class="book-card">
@@ -36,5 +36,6 @@ function renderizarLivros() {
     });
 }
 
-// Chama a função para renderizar a lista quando a página carregar
+
+
 renderizarLivros();
